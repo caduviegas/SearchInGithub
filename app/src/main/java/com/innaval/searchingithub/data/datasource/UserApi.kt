@@ -1,7 +1,7 @@
 package com.innaval.searchingithub.data.datasource
 
 import com.innaval.searchingithub.domain.model.UserModel
-import com.innaval.searchingithub.domain.model.UserRepositoryModel
+import com.innaval.searchingithub.domain.model.UserInformationsModel
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -17,7 +17,7 @@ interface UserApi {
     ): Response<UserModel>
 
     @GET("users/{username}/repos")
-    suspend fun getUserRepos(
+    suspend fun getUserInformation(
         @Path("username") username: String,
-    ): Response<List<UserRepositoryModel>>
+    ): Response<List<UserInformationsModel>>
 }
