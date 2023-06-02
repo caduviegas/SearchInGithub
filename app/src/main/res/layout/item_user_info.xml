@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemUserInfoRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_border_solid"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/userInfoName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/userInfoLang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="name-respository" />
+
+    <TextView
+        android:id="@+id/userInfoLang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Lang" />
+
+    <TextView
+        android:id="@+id/userInfoWatchersCountLabel"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_watch"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userInfoName" />
+
+    <TextView
+        android:id="@+id/userInfoWatchersCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxWidth="100dp"
+        android:maxLines="1"
+        android:minWidth="40dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userInfoWatchersCountLabel"
+        app:layout_constraintStart_toEndOf="@+id/userInfoWatchersCountLabel"
+        app:layout_constraintTop_toTopOf="@+id/userInfoWatchersCountLabel"
+        tools:text="000" />
+
+    <TextView
+        android:id="@+id/userInfoForksCountLabel"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/label_forks"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userInfoWatchersCountLabel" />
+
+    <TextView
+        android:id="@+id/userInfoForksCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxWidth="100dp"
+        android:maxLines="1"
+        android:minWidth="40dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userInfoForksCountLabel"
+        app:layout_constraintStart_toEndOf="@+id/userInfoForksCountLabel"
+        app:layout_constraintTop_toTopOf="@+id/userInfoForksCountLabel"
+        tools:text="000" />
+
+    <TextView
+        android:id="@+id/userInfoStarsCountLabel"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/label_stars"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userInfoForksCountLabel" />
+
+    <TextView
+        android:id="@+id/userInfoStarsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxWidth="100dp"
+        android:maxLines="1"
+        android:minWidth="40dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userInfoStarsCountLabel"
+        app:layout_constraintStart_toEndOf="@+id/userInfoStarsCountLabel"
+        app:layout_constraintTop_toTopOf="@+id/userInfoStarsCountLabel"
+        tools:text="000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
