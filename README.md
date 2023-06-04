@@ -79,3 +79,10 @@ A arquitetura utilizada para organizar o app como um todo foi a Clean Architectu
   <img src="/images/details.jpg" style="width: 200px; height: 400px" alt="Details" />
   <img src="/images/not_found.jpg" style="width: 200px; height: 400px" alt="Not Found" />
 </div>
+
+## Melhorias Futuras do app
+- Implementar Testes Unitários
+- Implementar Github Actions
+- Atualizar Layout de xml para Compose
+- Criar uma tela de usuários favoritos
+- Criar um banco de dados para favoritar usuários (Possivelmente utilizando a biblioteca Room)

@@ -42,44 +42,40 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.8.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.5.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation Dependecies.kotlin_ktx
+    implementation Dependecies.appcompat
+    implementation Dependecies.material
+    implementation Dependecies.constraintLayout
+    testImplementation Dependecies.junit
+    androidTestImplementation Dependecies.junitTest
+    androidTestImplementation Dependecies.espresso
+    implementation Dependecies.swipe
 
 
     // navigation
-    def nav_version = "2.5.3"
-    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
-    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+    implementation Dependecies.navFragment
+    implementation Dependecies.navUi
+    implementation Dependecies.navDynamic
 
     // lifecycle
-    def lifecycle_version = "2.6.1"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation Dependecies.livedata
+    implementation Dependecies.viewModel
+    implementation Dependecies.lifecycleExtensions
 
     // glide
-    def glide_version = '4.15.1'
-    implementation "com.github.bumptech.glide:glide:$glide_version"
-    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+    implementation Dependecies.glide
+    annotationProcessor Dependecies.glideCompiler
 
     // retrofit
-    def retrofit2_version = '2.9.0'
-    implementation "com.squareup.retrofit2:retrofit:$retrofit2_version"
-    implementation "com.squareup.retrofit2:converter-gson:$retrofit2_version"
+    implementation Dependecies.retrofit
+    implementation Dependecies.converterGson
 
     // coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.0'
+    implementation Dependecies.coroutines
 
     // koin
-    implementation 'io.insert-koin:koin-android:3.3.3'
+    implementation Dependecies.koin
 
     // timber
-    implementation 'com.jakewharton.timber:timber:5.0.1'
+    implementation Dependecies.timber
 }
