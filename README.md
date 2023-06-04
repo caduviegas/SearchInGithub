@@ -75,9 +75,9 @@ A arquitetura utilizada para organizar o app como um todo foi a Clean Architectu
 <div style="display: flex;">
   <img src="/images/animacao.jpeg" style="width: 200px; height: 400px" alt="Animation" />
   <img src="/images/user.jpeg" style="width: 200px; height: 400px" alt="List Users" />
-  <img src="/images/search.jpg" style="width: 200px; height: 400px" alt="Search" />
-  <img src="/images/details.jpg" style="width: 200px; height: 400px" alt="Details" />
-  <img src="/images/not_found.jpg" style="width: 200px; height: 400px" alt="Not Found" />
+  <img src="/images/search.jpeg" style="width: 200px; height: 400px" alt="Search" />
+  <img src="/images/details.jpeg" style="width: 200px; height: 400px" alt="Details" />
+  <img src="/images/not_found.jpeg" style="width: 200px; height: 400px" alt="Not Found" />
 </div>
 
 ## Melhorias Futuras do app
